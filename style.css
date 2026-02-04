@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: "Urbanist", sans-serif; */
 }
 header{
-    background: #d2e6e4;
+    background: #d2e6e4 url('assests/Group236.png') center center no-repeat;
+    background-size: cover;
+    
 }
 #nav{
     display: flex;
@@ -14,9 +17,36 @@ header{
     gap: 20px 40px;
     justify-content: space-around;
     padding: 20px;
+    font-family: "Raleway", sans-serif;
+    
+
 }
 #menu ul{
     list-style: none;
     display: flex;
     gap: 10px 50px;
+    font-weight: 700;
+    font-size: 14px;
+}
+#menu ul li:nth-child(1){
+    color: #FD661F;
+    font-weight: 700;
+}
+.btn-group{
+    display: flex;
+    gap: 20px;
+}
+.btn-group button{
+    color: #0B7077;
+    padding: 14px 20px  ;
+    border-radius: 10px;
+    border:none;
+    background: #fff;
+}
+.btn-group button:nth-child(2){
+    background: #0B7077;
+    color: #fff;
+    padding: 14px 20px  ;
+    border-radius: 10px;
+    border:none;
 }
