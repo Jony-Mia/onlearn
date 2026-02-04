@@ -1,52 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* font-family: "Urbanist", sans-serif; */
 }
-header{
+
+header {
     background: #d2e6e4 url('assests/Group236.png') center center no-repeat;
     background-size: cover;
-    
+    padding: 20px 50px;
+    padding-bottom: 0 !important;
+
 }
-#nav{
+
+#nav {
     display: flex;
     align-items: center;
     gap: 20px 40px;
     justify-content: space-around;
     padding: 20px;
     font-family: "Raleway", sans-serif;
-    
+
 
 }
-#menu ul{
+
+#menu ul {
     list-style: none;
     display: flex;
     gap: 10px 50px;
     font-weight: 700;
     font-size: 14px;
 }
-#menu ul li:nth-child(1){
+
+#menu ul li:nth-child(1) {
     color: #FD661F;
     font-weight: 700;
 }
-.btn-group{
+
+.btn-group {
     display: flex;
     gap: 20px;
 }
-.btn-group button{
+
+.btn-group button {
     color: #0B7077;
-    padding: 14px 20px  ;
+    padding: 14px 20px;
     border-radius: 10px;
-    border:none;
+    border: none;
     background: #fff;
 }
-.btn-group button:nth-child(2){
+
+.btn-group button:nth-child(2) {
     background: #0B7077;
     color: #fff;
-    padding: 14px 20px  ;
+    padding: 14px 20px;
     border-radius: 10px;
-    border:none;
+    border: none;
+}
+
+#hero {
+    display: flex;
+}
+
+.never {
+    background: #fff;
+    padding: 10px;
+    font-family: "Raleway", "sans-serif";
+    font-weight: 500;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+}
+
+#left-hero {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+#left-hero .text {
+    font-family: "Raleway", "sans-serif";
+    font-size: 65px;
+    font-weight: bolder;
+    width: 100%;
+    color: #0b7077;
+}
+
+.left-hero-footer button {
+    padding: 12px 16px;
+    width: 25%;
+    margin-right: 20px;
+    background: #FD661F;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.left-hero-footer {
+    margin-top: 20px;
+    display: flex;
+}
+.calendar-box{
+    display: flex;
+    gap: 15px;
+    font-family: "Nunito Sans","sans-serif";
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    position: absolute;
+    /* bottom: 100px; */
+    top: 150px;
+}
+#state{
+    position: absolute;
+    top: 150px;
+    right: 20px;
+}
+.calendar-box h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #595959;
+}
+#right-hero {
+    position: relative;
+    /* background: url() no-repeat center right; */
+
+
 }
