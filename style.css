@@ -8,6 +8,10 @@
     box-sizing: border-box;
     /* font-family: "Urbanist", sans-serif; */
 }
+:root{
+    --primary:  #0B7077;
+    --secondary:#fd661f;
+}
 
 header {
     background: #d2e6e4 url('assests/Group236.png') center center no-repeat;
@@ -133,6 +137,33 @@ header {
 #right-hero {
     position: relative;
     /* background: url() no-repeat center right; */
-
-
+}
+#main-content{
+    margin: 50px;
+}
+#main-content >h1{
+    color: var(--secondary);
+    font-size: 48px;
+    font-family: "Inter";
+}
+#main-content .list ul{
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    gap: 20px 30px;
+    justify-content:   center;
+}
+#main-content .list ul li{
+    background: white;
+    padding: 10px 20px;
+    color: var(--primary);
+    border-radius: 30px;
+    border: 1px solid gray;
+    font-family: "Urbanist";
+    font-weight: bold;
+    font-size: 14px;
+}
+#main-content .list ul li:nth-child(1){
+    background: var(--primary);
+    color: white;
 }
